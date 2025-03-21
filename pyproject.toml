@@ -1,0 +1,53 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "asterisk-mcp-server"
+version = "0.1.0"
+description = "A Model Context Protocol (MCP) server that provides security scanning capabilities for code snippets, codebases, and verification of code changes"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Asterisk", email = "hello@asterisk.so"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "httpx",
+    "mcp[cli]",
+    "dearpygui",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "isort",
+    "mypy",
+    "build",
+    "twine",
+]
+
+[project.urls]
+"Homepage" = "https://mcp.asterisk.so"
+"Bug Tracker" = "https://github.com/getasterisk/asterisk-mcp-server/issues"
+"Documentation" = "https://github.com/getAsterisk/asterisk-mcp-server/blob/main/README.md"
+
+[project.scripts]
+asterisk-mcp = "asterisk_mcp_server.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["asterisk_mcp_server"]
