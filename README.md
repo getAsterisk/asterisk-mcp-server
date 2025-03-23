@@ -4,7 +4,7 @@ A Model Context Protocol (MCP) server that provides security scanning capabiliti
 
 ## Overview
 
-Asterisk MCP Server is a middleware component that connects to the Asterisk security API to provide real-time security analysis of code. It implements the Model Context Protocol (MCP) to expose security scanning tools to AI assistants like Claude, enabling them to analyze code for security vulnerabilities.
+Asterisk MCP Server is a middleware component that connects to the Asterisk security API to provide real-time security analysis of code. It implements the Model Context Protocol (MCP) to expose security scanning tools to AI assistants like Claude, Cursor, Cline, Windsurf, etc. enabling them to analyze code for security vulnerabilities.
 
 ## Architecture
 
@@ -25,16 +25,16 @@ flowchart LR
 ## Features
 
 - **Code Snippet Scanning**: Analyze individual code snippets for security vulnerabilities
-- **Codebase Scanning**: Scan multiple files for security issues
-- **Change Verification**: Verify if code changes introduce security vulnerabilities
+- **Codebase Scanning**: Scan multiple files for security issues with accurate context coverage
+- **Change Verification**: Verify if code changes in your chat history introduce security vulnerabilities
 - **Beautiful Settings UI**: Configure the server through a graphical interface
 - **Flexible Transport**: Support for stdio and SSE transport protocols
 - **Comprehensive Logging**: Detailed logging with configurable verbosity
 
 ## Requirements
 
-- Python 3.7+
-- pipx
+- Python 3.10+
+- pipx / uvx
 - httpx
 - mcp[cli]
 - dearpygui (for settings UI)

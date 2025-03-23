@@ -33,7 +33,7 @@ class Config:
         """Initialize configuration with default values."""
         self.config_file = Path("asterisk-config.json")
         self.config = {
-            "api_url": "https://mcp.asterisk.so:1337",
+            "api_url": "https://api.mcp.asterisk.so",
             "api_key": "",
             "api_timeout": None,
             "server_name": "asterisk-mcp",

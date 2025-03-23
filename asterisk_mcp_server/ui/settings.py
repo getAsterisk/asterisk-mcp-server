@@ -166,7 +166,7 @@ class SettingsUI:
                     )
                 add_tooltip(
                     "api_url",
-                    "The base URL of the Asterisk API server (e.g., https://api.asteriskmcp.com)",
+                    "The base URL of the Asterisk API server (e.g., https://api.mcp.asterisk.so)",
                 )
 
                 with dpg.group(horizontal=True):
