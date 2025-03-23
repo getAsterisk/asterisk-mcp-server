@@ -6,8 +6,6 @@ This module provides a beautiful and minimal settings UI for Asterisk MCP Server
 """
 
 import os
-import tkinter as tk
-from tkinter import ttk
 import threading
 
 
