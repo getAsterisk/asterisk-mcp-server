@@ -47,7 +47,7 @@ flowchart LR
       "command": "pipx run asterisk-mcp-server",
       "args": [
         "--api-url",
-        "http://api.mcp.asterisk.so",
+        "https://api.mcp.asterisk.so",
         "--transport",
         "stdio",
         "--key",
