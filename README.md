@@ -44,8 +44,10 @@ flowchart LR
 {
   "mcpServers": {
     "asterisk-mcp": {
-      "command": "pipx run asterisk-mcp-server",
+      "command": "pipx",
       "args": [
+        "run",
+        "asterisk-mcp-server",
         "--api-url",
         "https://api.mcp.asterisk.so",
         "--transport",
@@ -53,9 +55,11 @@ flowchart LR
         "--key",
         "YOUR_API_KEY"
       ],
+      "timeout": 3600
     }
   }
 }
+
 ```
 
 ### Configuration
