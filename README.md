@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/getasterisk-asterisk-mcp-server-badge.png)](https://mseep.ai/app/getasterisk-asterisk-mcp-server)
+
 # Asterisk MCP Server
 
 A Model Context Protocol (MCP) server that provides security scanning capabilities for code snippets, codebases, and verification of code changes.
